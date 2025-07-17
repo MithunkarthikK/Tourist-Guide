@@ -10,7 +10,7 @@ if not firebase_admin._apps:
 db = firestore.client()
 
 def get_destinations(request):
-    destinations_ref = db.collection('Place_collections')  
+    destinations_ref = db.collection('districts')  
     docs = destinations_ref.stream()
 
     data = []
