@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Places from "./pages/Places";
 import PlaceDetails from "./pages/PlaceDetails";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
 import About from "./pages/About"
 import Contact  from "./pages/Contact";
