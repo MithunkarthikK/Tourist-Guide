@@ -8,7 +8,6 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Places", path: "/places" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -18,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold tracking-wide glow-text-orange">
-          🔥 TN Tour Guide
+          Tourist Guide
         </Link>
 
         {/* Desktop Menu */}

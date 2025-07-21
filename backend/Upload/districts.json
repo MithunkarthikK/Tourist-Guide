@@ -1,0 +1,1522 @@
+[
+  {
+    "name": "Ariyalur",
+    "description": "Explore the beauty and heritage of Ariyalur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Ariyalur Popular Place 1",
+        "description": "Description of popular place 1 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ariyalur Popular Place 2",
+        "description": "Description of popular place 2 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ariyalur Popular Place 3",
+        "description": "Description of popular place 3 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ariyalur Popular Place 4",
+        "description": "Description of popular place 4 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Ariyalur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ariyalur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Ariyalur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Chengalpattu",
+    "description": "Explore the beauty and heritage of Chengalpattu, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Chengalpattu Popular Place 1",
+        "description": "Description of popular place 1 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Chengalpattu Popular Place 2",
+        "description": "Description of popular place 2 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Chengalpattu Popular Place 3",
+        "description": "Description of popular place 3 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Chengalpattu Popular Place 4",
+        "description": "Description of popular place 4 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Chengalpattu Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Chengalpattu Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Chengalpattu.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Chennai",
+    "region": "North",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Marina_Beach_Chennai.jpg",
+    "description": "Capital of Tamil Nadu, a blend of cultural heritage and modern infrastructure.",
+    "popular_places": [
+      {
+        "name": "Marina Beach",
+        "description": "One of the longest beaches in the world, ideal for morning walks and sunsets.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Marina_Beach_Chennai.jpg"
+      },
+      {
+        "name": "Kapaleeshwarar Temple",
+        "description": "A famous Dravidian-style temple in Mylapore dedicated to Lord Shiva.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Kapaleeshwarar_temple_gopuram.jpg"
+      },
+      {
+        "name": "Fort St. George",
+        "description": "Historic British fort that now houses Tamil Nadu’s legislative assembly.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fort_St_George_Chennai.jpg"
+      },
+      {
+        "name": "Valluvar Kottam",
+        "description": "Monument built to honor the Tamil poet Thiruvalluvar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Valluvar_Kottam_1.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Broken Bridge",
+        "description": "An abandoned bridge at the Adyar estuary, a scenic spot for photographers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Broken_Bridge_Chennai.jpg"
+      },
+      {
+        "name": "Theosophical Society Gardens",
+        "description": "A peaceful space in Adyar with ancient trees and heritage structures.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Adyar_Banyan_Tree_Theosophical_Society_Chennai.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Coimbatore",
+    "region": "West",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Coimbatore_Railway_Junction.jpg",
+    "description": "A major hub of textile industries, Coimbatore is known as the Manchester of South India.",
+    "popular_places": [
+      {
+        "name": "Marudhamalai Temple",
+        "description": "A popular hill temple dedicated to Lord Murugan, offering scenic views.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Maruthamalai_Murugan_Temple.jpg"
+      },
+      {
+        "name": "VOC Park and Zoo",
+        "description": "A family-friendly park with a small zoo and amusement rides.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/VOC_Park_Coimbatore.jpg"
+      },
+      {
+        "name": "Perur Pateeswarar Temple",
+        "description": "Ancient Hindu temple with exquisite stone carvings, dedicated to Lord Shiva.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Perur_Pateeswarar_Temple.jpg"
+      },
+      {
+        "name": "Siruvani Waterfalls",
+        "description": "A natural waterfall known for its sweet water and lush surroundings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Siruvani_Waterfalls.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Dhyanalinga Temple",
+        "description": "An energy center created by Sadhguru, open to all religions and meditative practices.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Dhyanalinga_Yoga_Temple_1.jpg"
+      },
+      {
+        "name": "Kovai Kondattam",
+        "description": "A lesser-known water theme park perfect for families and kids.",
+        "image": "https://www.kovaikondattam.com/images/gallery/8.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Cuddalore",
+    "description": "Explore the beauty and heritage of Cuddalore, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Cuddalore Popular Place 1",
+        "description": "Description of popular place 1 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Cuddalore Popular Place 2",
+        "description": "Description of popular place 2 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Cuddalore Popular Place 3",
+        "description": "Description of popular place 3 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Cuddalore Popular Place 4",
+        "description": "Description of popular place 4 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Cuddalore Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Cuddalore Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Cuddalore.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Dharmapuri",
+    "description": "Explore the beauty and heritage of Dharmapuri, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Dharmapuri Popular Place 1",
+        "description": "Description of popular place 1 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dharmapuri Popular Place 2",
+        "description": "Description of popular place 2 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dharmapuri Popular Place 3",
+        "description": "Description of popular place 3 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dharmapuri Popular Place 4",
+        "description": "Description of popular place 4 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Dharmapuri Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dharmapuri Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Dharmapuri.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Dindigul",
+    "description": "Explore the beauty and heritage of Dindigul, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Dindigul Popular Place 1",
+        "description": "Description of popular place 1 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dindigul Popular Place 2",
+        "description": "Description of popular place 2 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dindigul Popular Place 3",
+        "description": "Description of popular place 3 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dindigul Popular Place 4",
+        "description": "Description of popular place 4 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Dindigul Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Dindigul Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Dindigul.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Erode",
+    "description": "Explore the beauty and heritage of Erode, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Erode Popular Place 1",
+        "description": "Description of popular place 1 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Erode Popular Place 2",
+        "description": "Description of popular place 2 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Erode Popular Place 3",
+        "description": "Description of popular place 3 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Erode Popular Place 4",
+        "description": "Description of popular place 4 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Erode Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Erode Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Erode.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Kallakurichi",
+    "description": "Explore the beauty and heritage of Kallakurichi, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Kallakurichi Popular Place 1",
+        "description": "Description of popular place 1 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kallakurichi Popular Place 2",
+        "description": "Description of popular place 2 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kallakurichi Popular Place 3",
+        "description": "Description of popular place 3 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kallakurichi Popular Place 4",
+        "description": "Description of popular place 4 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Kallakurichi Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kallakurichi Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Kallakurichi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Kanchipuram",
+    "description": "Explore the beauty and heritage of Kanchipuram, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Kanchipuram Popular Place 1",
+        "description": "Description of popular place 1 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kanchipuram Popular Place 2",
+        "description": "Description of popular place 2 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kanchipuram Popular Place 3",
+        "description": "Description of popular place 3 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kanchipuram Popular Place 4",
+        "description": "Description of popular place 4 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Kanchipuram Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Kanchipuram Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Kanchipuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Kanyakumari",
+    "region": "South",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Kanyakumari_beach_sunrise.jpg",
+    "description": "The southernmost tip of India, where the Bay of Bengal, Arabian Sea, and Indian Ocean meet.",
+    "popular_places": [
+      {
+        "name": "Vivekananda Rock Memorial",
+        "description": "A sacred monument on a rocky island dedicated to Swami Vivekananda.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Vivekananda_Rock_Memorial_at_Kanyakumari.jpg"
+      },
+      {
+        "name": "Thiruvalluvar Statue",
+        "description": "A 133-foot-tall stone sculpture of the Tamil poet Thiruvalluvar near the Rock Memorial.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Thiruvalluvar_Statue_Kanyakumari.jpg"
+      },
+      {
+        "name": "Kanyakumari Beach",
+        "description": "A unique beach offering stunning views of sunrise and sunset over the ocean.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Kanyakumari_beach.jpg"
+      },
+      {
+        "name": "Gandhi Memorial Mandapam",
+        "description": "Built where Gandhi's ashes were kept before immersion, the architecture is symbolic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gandhi_Memorial_Kanyakumari.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Mathur Aqueduct",
+        "description": "One of the highest and longest aqueducts in South Asia, offering scenic views.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Mathur_aqueduct.jpg"
+      },
+      {
+        "name": "Vattakottai Fort",
+        "description": "A coastal fort offering panoramic views of the sea and Western Ghats.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Vattakottai_Fort_Kanyakumari.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Karur",
+    "description": "Explore the beauty and heritage of Karur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Karur Popular Place 1",
+        "description": "Description of popular place 1 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Karur Popular Place 2",
+        "description": "Description of popular place 2 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Karur Popular Place 3",
+        "description": "Description of popular place 3 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Karur Popular Place 4",
+        "description": "Description of popular place 4 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Karur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Karur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Karur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Krishnagiri",
+    "description": "Explore the beauty and heritage of Krishnagiri, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Krishnagiri Popular Place 1",
+        "description": "Description of popular place 1 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Krishnagiri Popular Place 2",
+        "description": "Description of popular place 2 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Krishnagiri Popular Place 3",
+        "description": "Description of popular place 3 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Krishnagiri Popular Place 4",
+        "description": "Description of popular place 4 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Krishnagiri Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Krishnagiri Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Krishnagiri.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Madurai",
+    "region": "South",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Meenakshi_Amman_Temple_Gopuram_Madurai.jpg",
+    "description": "Historic temple city on the banks of the Vaigai River, known for its deep cultural roots.",
+    "popular_places": [
+      {
+        "name": "Meenakshi Amman Temple",
+        "description": "A sprawling temple complex with intricate sculptures and historic significance.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Meenakshi_Amman_Temple_Gopuram_Madurai.jpg"
+      },
+      {
+        "name": "Thirumalai Nayakkar Mahal",
+        "description": "A majestic palace showcasing Indo-Saracenic architecture.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Thirumalai_Nayakkar_Mahal.jpg"
+      },
+      {
+        "name": "Gandhi Memorial Museum",
+        "description": "Museum containing historical records of India’s freedom movement.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Gandhi_Museum_Madurai.jpg"
+      },
+      {
+        "name": "Vaigai Dam",
+        "description": "A scenic dam popular for its park and weekend picnics.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Vaigai_Dam.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Athisayam Theme Park",
+        "description": "A water-themed amusement park on the outskirts of Madurai.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Athisayam_Park.jpg"
+      },
+      {
+        "name": "Samanar Hills",
+        "description": "Ancient Jain hill site with rock-cut caves and inscriptions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Samanar_Hills_Madurai.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Mayiladuthurai",
+    "description": "Explore the beauty and heritage of Mayiladuthurai, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Mayiladuthurai Popular Place 1",
+        "description": "Description of popular place 1 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Mayiladuthurai Popular Place 2",
+        "description": "Description of popular place 2 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Mayiladuthurai Popular Place 3",
+        "description": "Description of popular place 3 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Mayiladuthurai Popular Place 4",
+        "description": "Description of popular place 4 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Mayiladuthurai Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Mayiladuthurai Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Mayiladuthurai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Nagapattinam",
+    "description": "Explore the beauty and heritage of Nagapattinam, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Nagapattinam Popular Place 1",
+        "description": "Description of popular place 1 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nagapattinam Popular Place 2",
+        "description": "Description of popular place 2 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nagapattinam Popular Place 3",
+        "description": "Description of popular place 3 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nagapattinam Popular Place 4",
+        "description": "Description of popular place 4 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Nagapattinam Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nagapattinam Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Nagapattinam.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Namakkal",
+    "description": "Explore the beauty and heritage of Namakkal, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Namakkal Popular Place 1",
+        "description": "Description of popular place 1 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Namakkal Popular Place 2",
+        "description": "Description of popular place 2 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Namakkal Popular Place 3",
+        "description": "Description of popular place 3 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Namakkal Popular Place 4",
+        "description": "Description of popular place 4 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Namakkal Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Namakkal Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Namakkal.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Nilgiris",
+    "description": "Explore the beauty and heritage of Nilgiris, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Nilgiris Popular Place 1",
+        "description": "Description of popular place 1 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nilgiris Popular Place 2",
+        "description": "Description of popular place 2 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nilgiris Popular Place 3",
+        "description": "Description of popular place 3 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nilgiris Popular Place 4",
+        "description": "Description of popular place 4 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Nilgiris Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Nilgiris Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Nilgiris.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Perambalur",
+    "description": "Explore the beauty and heritage of Perambalur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Perambalur Popular Place 1",
+        "description": "Description of popular place 1 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Perambalur Popular Place 2",
+        "description": "Description of popular place 2 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Perambalur Popular Place 3",
+        "description": "Description of popular place 3 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Perambalur Popular Place 4",
+        "description": "Description of popular place 4 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Perambalur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Perambalur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Perambalur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Pudukkottai",
+    "description": "Explore the beauty and heritage of Pudukkottai, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Pudukkottai Popular Place 1",
+        "description": "Description of popular place 1 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Pudukkottai Popular Place 2",
+        "description": "Description of popular place 2 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Pudukkottai Popular Place 3",
+        "description": "Description of popular place 3 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Pudukkottai Popular Place 4",
+        "description": "Description of popular place 4 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Pudukkottai Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Pudukkottai Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Pudukkottai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Ramanathapuram",
+    "description": "Explore the beauty and heritage of Ramanathapuram, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Ramanathapuram Popular Place 1",
+        "description": "Description of popular place 1 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ramanathapuram Popular Place 2",
+        "description": "Description of popular place 2 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ramanathapuram Popular Place 3",
+        "description": "Description of popular place 3 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ramanathapuram Popular Place 4",
+        "description": "Description of popular place 4 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Ramanathapuram Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ramanathapuram Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Ramanathapuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Ranipet",
+    "description": "Explore the beauty and heritage of Ranipet, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Ranipet Popular Place 1",
+        "description": "Description of popular place 1 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ranipet Popular Place 2",
+        "description": "Description of popular place 2 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ranipet Popular Place 3",
+        "description": "Description of popular place 3 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ranipet Popular Place 4",
+        "description": "Description of popular place 4 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Ranipet Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Ranipet Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Ranipet.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Salem",
+    "region": "North",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Salem_city_view.jpg",
+    "description": "Known for its steel production and surrounded by hills, Salem is a growing urban center.",
+    "popular_places": [
+      {
+        "name": "Yercaud Hill Station",
+        "description": "A serene hill station in the Shevaroy hills known for its cool climate and greenery.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Yercaud_view.jpg"
+      },
+      {
+        "name": "1008 Lingam Temple",
+        "description": "A spiritual spot with 1008 small Shiva lingams surrounding a central shrine.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/1008_Shiva_Temple_Salem.jpg"
+      },
+      {
+        "name": "Mookaneri Lake",
+        "description": "An urban lake with boating and eco-islands — a peaceful evening spot.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Mookaneri_Lake_Salem.jpg"
+      },
+      {
+        "name": "Kottai Mariamman Temple",
+        "description": "A well-known temple located in the heart of Salem city.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Kottai_Mariamman_Temple_Salem.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Kurumbapatti Zoological Park",
+        "description": "A small zoo nestled in the foothills, less crowded and good for children.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kurumbapatti_Zoo_Entrance.jpg"
+      },
+      {
+        "name": "Sankagiri Fort",
+        "description": "An ancient hilltop fort built by the Vijayanagara kings with a panoramic view.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sankagiri_Fort_view.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Sivaganga",
+    "description": "Explore the beauty and heritage of Sivaganga, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Sivaganga Popular Place 1",
+        "description": "Description of popular place 1 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Sivaganga Popular Place 2",
+        "description": "Description of popular place 2 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Sivaganga Popular Place 3",
+        "description": "Description of popular place 3 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Sivaganga Popular Place 4",
+        "description": "Description of popular place 4 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Sivaganga Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Sivaganga Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Sivaganga.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Tenkasi",
+    "description": "Explore the beauty and heritage of Tenkasi, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Tenkasi Popular Place 1",
+        "description": "Description of popular place 1 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tenkasi Popular Place 2",
+        "description": "Description of popular place 2 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tenkasi Popular Place 3",
+        "description": "Description of popular place 3 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tenkasi Popular Place 4",
+        "description": "Description of popular place 4 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Tenkasi Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tenkasi Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Tenkasi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Thanjavur",
+    "description": "Explore the beauty and heritage of Thanjavur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Thanjavur Popular Place 1",
+        "description": "Description of popular place 1 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thanjavur Popular Place 2",
+        "description": "Description of popular place 2 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thanjavur Popular Place 3",
+        "description": "Description of popular place 3 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thanjavur Popular Place 4",
+        "description": "Description of popular place 4 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Thanjavur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thanjavur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Thanjavur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Theni",
+    "description": "Explore the beauty and heritage of Theni, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Theni Popular Place 1",
+        "description": "Description of popular place 1 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Theni Popular Place 2",
+        "description": "Description of popular place 2 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Theni Popular Place 3",
+        "description": "Description of popular place 3 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Theni Popular Place 4",
+        "description": "Description of popular place 4 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Theni Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Theni Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Theni.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Thiruvallur",
+    "description": "Explore the beauty and heritage of Thiruvallur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Thiruvallur Popular Place 1",
+        "description": "Description of popular place 1 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvallur Popular Place 2",
+        "description": "Description of popular place 2 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvallur Popular Place 3",
+        "description": "Description of popular place 3 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvallur Popular Place 4",
+        "description": "Description of popular place 4 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Thiruvallur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvallur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Thiruvallur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Thiruvarur",
+    "description": "Explore the beauty and heritage of Thiruvarur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Thiruvarur Popular Place 1",
+        "description": "Description of popular place 1 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvarur Popular Place 2",
+        "description": "Description of popular place 2 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvarur Popular Place 3",
+        "description": "Description of popular place 3 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvarur Popular Place 4",
+        "description": "Description of popular place 4 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Thiruvarur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thiruvarur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Thiruvarur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Thoothukudi",
+    "description": "Explore the beauty and heritage of Thoothukudi, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Thoothukudi Popular Place 1",
+        "description": "Description of popular place 1 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thoothukudi Popular Place 2",
+        "description": "Description of popular place 2 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thoothukudi Popular Place 3",
+        "description": "Description of popular place 3 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thoothukudi Popular Place 4",
+        "description": "Description of popular place 4 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Thoothukudi Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Thoothukudi Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Thoothukudi.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Tiruchirappalli",
+    "region": "Central",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tiruchirapalli_Cityscape.jpg",
+    "description": "Famous for its temples, education institutions, and the iconic Rockfort.",
+    "popular_places": [
+      {
+        "name": "Rockfort Temple",
+        "description": "A historic fort and temple complex perched atop a rocky hill.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Rockfort_Temple.jpg"
+      },
+      {
+        "name": "Sri Ranganathaswamy Temple",
+        "description": "One of the largest temple complexes in India, dedicated to Lord Vishnu.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Srirangam_Temple_Gopuram.jpg"
+      },
+      {
+        "name": "Kallanai Dam",
+        "description": "An ancient dam built by the Cholas, still functional and beautiful.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kallanai.jpg"
+      },
+      {
+        "name": "Butterfly Park",
+        "description": "A small ecological park with various species of butterflies and flowers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Butterfly_Park_Thuvakudi_Trichy.jpg"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Uyyakondan Canal",
+        "description": "A scenic canal walkway that’s less known but loved by locals.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/b5/d9/1d/uyyakondan-canal-walkway.jpg"
+      },
+      {
+        "name": "Pachamalai Hills",
+        "description": "A serene hilly getaway located northeast of Trichy, ideal for trekkers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Pachamalai_Hills_view.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Tirunelveli",
+    "description": "Explore the beauty and heritage of Tirunelveli, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Tirunelveli Popular Place 1",
+        "description": "Description of popular place 1 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirunelveli Popular Place 2",
+        "description": "Description of popular place 2 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirunelveli Popular Place 3",
+        "description": "Description of popular place 3 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirunelveli Popular Place 4",
+        "description": "Description of popular place 4 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Tirunelveli Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirunelveli Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Tirunelveli.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Tirupathur",
+    "description": "Explore the beauty and heritage of Tirupathur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Tirupathur Popular Place 1",
+        "description": "Description of popular place 1 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirupathur Popular Place 2",
+        "description": "Description of popular place 2 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirupathur Popular Place 3",
+        "description": "Description of popular place 3 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirupathur Popular Place 4",
+        "description": "Description of popular place 4 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Tirupathur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tirupathur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Tirupathur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Tiruppur",
+    "description": "Explore the beauty and heritage of Tiruppur, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "West",
+    "popular_places": [
+      {
+        "name": "Tiruppur Popular Place 1",
+        "description": "Description of popular place 1 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruppur Popular Place 2",
+        "description": "Description of popular place 2 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruppur Popular Place 3",
+        "description": "Description of popular place 3 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruppur Popular Place 4",
+        "description": "Description of popular place 4 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Tiruppur Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruppur Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Tiruppur.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Tiruvannamalai",
+    "description": "Explore the beauty and heritage of Tiruvannamalai, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Tiruvannamalai Popular Place 1",
+        "description": "Description of popular place 1 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruvannamalai Popular Place 2",
+        "description": "Description of popular place 2 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruvannamalai Popular Place 3",
+        "description": "Description of popular place 3 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruvannamalai Popular Place 4",
+        "description": "Description of popular place 4 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Tiruvannamalai Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Tiruvannamalai Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Tiruvannamalai.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Vellore",
+    "description": "Explore the beauty and heritage of Vellore, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "North",
+    "popular_places": [
+      {
+        "name": "Vellore Popular Place 1",
+        "description": "Description of popular place 1 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Vellore Popular Place 2",
+        "description": "Description of popular place 2 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Vellore Popular Place 3",
+        "description": "Description of popular place 3 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Vellore Popular Place 4",
+        "description": "Description of popular place 4 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Vellore Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Vellore Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Vellore.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Viluppuram",
+    "description": "Explore the beauty and heritage of Viluppuram, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "Central",
+    "popular_places": [
+      {
+        "name": "Viluppuram Popular Place 1",
+        "description": "Description of popular place 1 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Viluppuram Popular Place 2",
+        "description": "Description of popular place 2 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Viluppuram Popular Place 3",
+        "description": "Description of popular place 3 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Viluppuram Popular Place 4",
+        "description": "Description of popular place 4 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Viluppuram Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Viluppuram Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Viluppuram.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  },
+  {
+    "name": "Virudhunagar",
+    "description": "Explore the beauty and heritage of Virudhunagar, Tamil Nadu.",
+    "image": "https://via.placeholder.com/300",
+    "region": "South",
+    "popular_places": [
+      {
+        "name": "Virudhunagar Popular Place 1",
+        "description": "Description of popular place 1 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Virudhunagar Popular Place 2",
+        "description": "Description of popular place 2 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Virudhunagar Popular Place 3",
+        "description": "Description of popular place 3 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Virudhunagar Popular Place 4",
+        "description": "Description of popular place 4 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ],
+    "hidden_places": [
+      {
+        "name": "Virudhunagar Hidden Gem 1",
+        "description": "Description of hidden gem 1 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      },
+      {
+        "name": "Virudhunagar Hidden Gem 2",
+        "description": "Description of hidden gem 2 in Virudhunagar.",
+        "image": "https://via.placeholder.com/200"
+      }
+    ]
+  }
+]

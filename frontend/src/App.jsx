@@ -6,7 +6,9 @@ import Register from "./pages/Register";
 import Places from "./pages/Places";
 import PlaceDetails from "./pages/PlaceDetails";
 import Navbar from "./components/navbar";
-import Preloader from "./components/preloader";
+import Preloader from "./components/Preloader";
+import About from "./pages/About"
+import Contact  from "./pages/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,14 +23,17 @@ function App() {
       {loading ? (
         <Preloader />
       ) : (
-        <div className="bg-[#1c1c1e] min-h-screen text-white">
+        <div className="bg-[#1c1c1e] min-h-screen text-white pt-7">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/places" element={<Places />} />
-            <Route path="/place/:id" element={<PlaceDetails />} />
+            <Route path="/places/:id" element={<Places />} />
+            <Route path="/places/:id/:placeName" element={<PlaceDetails />} />
+
           </Routes>
         </div>
       )}

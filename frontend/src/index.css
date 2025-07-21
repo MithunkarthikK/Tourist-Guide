@@ -1,7 +1,4 @@
 @import "tailwindcss";
-.glow-text-orange {
-  text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00;
-}
 .glow-box-orange {
   box-shadow: 0 0 8px rgba(255, 140, 0, 0.5), 0 0 15px rgba(255, 140, 0, 0.6);
 }
