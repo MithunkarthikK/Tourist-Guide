@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
 import About from "./pages/About"
 import Contact  from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ function App() {
             <Route path="/places/:id/:placeName" element={<PlaceDetails />} />
 
           </Routes>
+          <Footer/>
         </div>
       )}
     </Router>
