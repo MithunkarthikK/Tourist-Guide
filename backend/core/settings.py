@@ -80,19 +80,34 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
 CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://localhost:5173",          # Local dev frontend
+    "https://touristguide.vercel.app" # Production frontend domain
 ]
+
 CORS_ALLOWED_ORIGINS += config(
     'CORS_ALLOWED_ORIGINS',
     default="",
 ).split(",") if config('CORS_ALLOWED_ORIGINS', default="") else []
 
+# Cookie settings for secure cross-site cookies in production
+if not DEBUG:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SAMESITE = "None"
+    CSRF_COOKIE_SAMESITE = "None"
+else:
+    SESSION_COOKIE_SECURE = False
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SAMESITE = "Lax"
+    CSRF_COOKIE_SAMESITE = "Lax"
+
 # DRF settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',  # Token auth
-        'rest_framework.authentication.SessionAuthentication', # Optional session auth
+        'rest_framework.authentication.SessionAuthentication', # Session auth
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
