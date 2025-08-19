@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,13 +15,19 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex space-x-5 text-white text-xl">
           <a href="https://github.com/MithunkarthikK" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-            <FaGithub />
+            <FaGithub className="text-red-400 text-xl hover:scale-110 transition-transform duration-300"/>
           </a>
-          <a href="https://www.linkedin.com/in/k-mithunkarthik" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-            <FaLinkedin />
+          <a href="https://www.linkedin.com/in/mithunkarthikk" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+            <FaLinkedin className="text-blue-400 text-xl hover:scale-110 transition-transform duration-300" />
           </a>
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-            <FaTwitter />
+            <FaTwitter className="text-sky-400 text-xl hover:scale-110 transition-transform duration-300"/>
+          </a>
+          <a href="https://www.instagram.com/itzkxrthik" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+            <FaInstagram className="text-pink-400 text-xl hover:scale-110 transition-transform duration-300"/>
+          </a>
+          <a href="kkmithunkarthik@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+            <FaEnvelope className="text-yellow-400 text-xl hover:scale-110 transition-transform duration-300"/>
           </a>
         </div>
       </div>

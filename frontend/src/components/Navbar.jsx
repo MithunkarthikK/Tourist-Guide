@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Info, Phone, LogIn, LogOut, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useSearch } from "./SearchContext";
 
-const Navbar = () => {
+const Navbar = ({ isAuthenticated, onLogout }) => {
   const [open, setOpen] = useState(false);
   const { searchTerm, setSearchTerm } = useSearch();
   const location = useLocation();
-  const navigate = useNavigate();
-
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    setIsLoggedIn(!!token);
-  }, [location]);
 
   const navLinks = [
     { name: "About", path: "/about", icon: <Info size={18} /> },
@@ -25,12 +17,6 @@ const Navbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     setOpen(false);
-  };
-
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    setIsLoggedIn(false);
-    navigate("/login");
   };
 
   const isAuthPage =
@@ -50,10 +36,7 @@ const Navbar = () => {
 
         {/* Search bar (hidden on login/register) */}
         {!isAuthPage && (
-          <form
-            onSubmit={handleSearch}
-            className="flex-grow px-4 flex justify-center"
-          >
+          <form onSubmit={handleSearch} className="flex-grow px-4 flex justify-center">
             <input
               type="text"
               value={searchTerm}
@@ -78,9 +61,9 @@ const Navbar = () => {
               </motion.div>
             ))}
 
-            {isLoggedIn ? (
+            {isAuthenticated ? (
               <button
-                onClick={handleLogout}
+                onClick={onLogout}
                 className="flex items-center gap-1 px-3 py-1.5 rounded-md bg-[#1c1c1c] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all duration-200"
               >
                 <LogOut size={18} /> Logout
@@ -120,10 +103,10 @@ const Navbar = () => {
             </motion.div>
           ))}
 
-          {isLoggedIn ? (
+          {isAuthenticated ? (
             <button
               onClick={() => {
-                handleLogout();
+                onLogout();
                 setOpen(false);
               }}
               className="flex items-center justify-center gap-2 mt-2 px-4 py-2 text-center rounded-md bg-[#1c1c1c] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all duration-200"

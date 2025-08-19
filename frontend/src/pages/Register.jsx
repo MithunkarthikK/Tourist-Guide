@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import { Eye, EyeOff, Mail, Lock, User } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [form, setForm] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
+
+  // Read API base URL from environment variables e.g. VITE_API_URL
+  const apiUrl = import.meta.env.VITE_API_URL || "";
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -21,16 +25,52 @@ const Register = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, email, password } = form;
+  const isValidEmail = (email) => /^\S+@\S+\.\S+$/.test(email);
 
-    if (!name || !email || !password) {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { username, email, password } = form;
+
+    if (!username || !email || !password) {
       return toast.error("All fields are required!");
     }
 
-    // Replace this with your actual registration logic
-    toast.success("Registered successfully!");
+    if (!isValidEmail(email)) {
+      return toast.error("Please enter a valid email address.");
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch(`${apiUrl}/register/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, email, password }),
+      });
+
+      const text = await res.text();
+
+      let data = {};
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        return toast.error("Invalid response from server");
+      }
+
+      if (res.ok) {
+        toast.success(data.message || "Registered successfully!");
+        setForm({ username: "", email: "", password: "" });
+        setTimeout(() => navigate("/login"), 1500);
+      } else {
+        toast.error(data.error || "Registration failed");
+      }
+    } catch (error) {
+      toast.error("Server error: " + error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -40,18 +80,21 @@ const Register = () => {
         <h2 className="text-3xl font-semibold mb-6 text-center text-white">
           Create Account ✨
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5" noValidate>
           <div>
             <label className="text-sm font-medium text-gray-400 flex items-center gap-1">
               <User className="h-4 w-4" /> Full Name
             </label>
             <input
               type="text"
-              name="name"
-              value={form.name}
+              name="username"
+              value={form.username}
               onChange={handleChange}
               placeholder="John Doe"
               className="mt-1 w-full bg-[#1f1f1f] border border-gray-600 rounded-md px-4 py-2 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-400"
+              disabled={isSubmitting}
+              required
+              autoComplete="username"
             />
           </div>
 
@@ -66,6 +109,9 @@ const Register = () => {
               onChange={handleChange}
               placeholder="you@example.com"
               className="mt-1 w-full bg-[#1f1f1f] border border-gray-600 rounded-md px-4 py-2 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-400"
+              disabled={isSubmitting}
+              required
+              autoComplete="email"
             />
           </div>
 
@@ -81,10 +127,17 @@ const Register = () => {
                 onChange={handleChange}
                 placeholder="••••••••"
                 className="mt-1 w-full bg-[#1f1f1f] border border-gray-600 rounded-md px-4 py-2 text-sm text-white placeholder-gray-500 focus:border-orange-500 focus:ring-1 focus:ring-orange-400"
+                disabled={isSubmitting}
+                required
+                autoComplete="new-password"
               />
               <div
-                className="absolute right-3 top-3 text-gray-400 cursor-pointer"
+                className="absolute right-3 top-3 text-gray-400 cursor-pointer select-none"
                 onClick={togglePassword}
+                aria-label="Toggle password visibility"
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => e.key === "Enter" && togglePassword()}
               >
                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
               </div>
@@ -93,9 +146,12 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition font-medium"
+            className={`w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition font-medium ${
+              isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={isSubmitting}
           >
-            Sign Up
+            {isSubmitting ? "Signing Up..." : "Sign Up"}
           </button>
 
           <div className="text-center text-sm text-gray-400">
@@ -113,12 +169,12 @@ const Register = () => {
               type="button"
               onClick={() => toast("Google signup coming soon!")}
               className="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-md hover:bg-gray-100 transition text-sm font-medium w-full"
+              disabled={isSubmitting}
             >
               <FcGoogle size={20} />
               Sign Up with Google
             </button>
           </div>
-
         </form>
       </div>
     </div>
