@@ -142,8 +142,8 @@ def register(request):
     except json.JSONDecodeError:
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
-    except Exception as e:
-        # For production, avoid returning raw error details
+    except Exception:
+        # For production, avoid leaking raw error details
         return JsonResponse({"error": "Server error"}, status=500)
 
 
@@ -179,7 +179,7 @@ def user_login(request):
     except json.JSONDecodeError:
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
-    except Exception as e:
+    except Exception:
         # For production, avoid leaking raw error details
         return JsonResponse({"error": "Server error"}, status=500)
 
