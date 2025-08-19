@@ -8,10 +8,13 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_GET, require_POST
 from django.http import JsonResponse
+from django.core.exceptions import MultipleObjectsReturned
+
 
 # Load environment variables for Firebase
 FIREBASE_API_KEY = os.environ.get("FIREBASE_API_KEY", "YOUR_DEFAULT_API_KEY")
 PROJECT_ID = os.environ.get("PROJECT_ID", "touristguidedb-tn")
+
 
 # Helper to parse Firestore place data
 def parse_place(place):
@@ -21,6 +24,7 @@ def parse_place(place):
         "description": fields.get("description", {}).get("stringValue", ""),
         "image": fields.get("image", {}).get("stringValue", "")
     }
+
 
 @csrf_exempt
 @require_GET
@@ -55,6 +59,7 @@ def get_destinations(request):
 
     return JsonResponse(data, safe=False)
 
+
 @csrf_exempt
 @require_GET
 def get_single_district(request, district_name):
@@ -86,7 +91,9 @@ def get_single_district(request, district_name):
             })
     return JsonResponse({"error": "District not found"}, status=404)
 
+
 ### Authentication APIs ###
+
 
 @csrf_exempt
 @require_POST
@@ -136,7 +143,9 @@ def register(request):
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
     except Exception as e:
-        return JsonResponse({"error": str(e)}, status=500)
+        # For production, avoid returning raw error details
+        return JsonResponse({"error": "Server error"}, status=500)
+
 
 @csrf_exempt
 @require_POST
@@ -156,6 +165,8 @@ def user_login(request):
                 user = authenticate(request, username=user_obj.username, password=password)
             except User.DoesNotExist:
                 return JsonResponse({"error": "Invalid credentials"}, status=401)
+            except MultipleObjectsReturned:
+                return JsonResponse({"error": "Multiple users found with this email"}, status=400)
         else:
             user = authenticate(request, username=identifier, password=password)
 
@@ -164,8 +175,14 @@ def user_login(request):
             return JsonResponse({"message": "Login successful", "username": user.username, "email": user.email})
         else:
             return JsonResponse({"error": "Invalid credentials"}, status=401)
+
+    except json.JSONDecodeError:
+        return JsonResponse({"error": "Invalid JSON"}, status=400)
+
     except Exception as e:
-        return JsonResponse({"error": str(e)}, status=500)
+        # For production, avoid leaking raw error details
+        return JsonResponse({"error": "Server error"}, status=500)
+
 
 @csrf_exempt
 @require_POST
