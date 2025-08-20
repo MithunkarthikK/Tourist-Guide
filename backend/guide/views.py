@@ -2,6 +2,8 @@ import os
 import json
 import datetime
 import requests
+import logging
+import traceback
 
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
@@ -10,11 +12,11 @@ from django.views.decorators.http import require_GET, require_POST
 from django.http import JsonResponse
 from django.core.exceptions import MultipleObjectsReturned
 
+logger = logging.getLogger(__name__)
 
 # Load environment variables for Firebase
 FIREBASE_API_KEY = os.environ.get("FIREBASE_API_KEY", "YOUR_DEFAULT_API_KEY")
 PROJECT_ID = os.environ.get("PROJECT_ID", "touristguidedb-tn")
-
 
 # Helper to parse Firestore place data
 def parse_place(place):
@@ -22,9 +24,8 @@ def parse_place(place):
     return {
         "name": fields.get("name", {}).get("stringValue", ""),
         "description": fields.get("description", {}).get("stringValue", ""),
-        "image": fields.get("image", {}).get("stringValue", "")
+        "image": fields.get("image", {}).get("stringValue", ""),
     }
-
 
 @csrf_exempt
 @require_GET
@@ -36,6 +37,7 @@ def get_destinations(request):
         response.raise_for_status()
         documents = response.json().get("documents", [])
     except requests.exceptions.RequestException as e:
+        logger.error(f"Firestore fetch error in get_destinations: {traceback.format_exc()}")
         return JsonResponse({"error": "Failed to fetch data from Firebase", "details": str(e)}, status=500)
 
     data = []
@@ -54,11 +56,10 @@ def get_destinations(request):
             "image": fields.get("image", {}).get("stringValue", ""),
             "description": fields.get("description", {}).get("stringValue", ""),
             "popular_places": popular_places,
-            "hidden_places": hidden_places
+            "hidden_places": hidden_places,
         })
 
     return JsonResponse(data, safe=False)
-
 
 @csrf_exempt
 @require_GET
@@ -70,6 +71,7 @@ def get_single_district(request, district_name):
         response.raise_for_status()
         documents = response.json().get("documents", [])
     except requests.exceptions.RequestException as e:
+        logger.error(f"Firestore fetch error in get_single_district: {traceback.format_exc()}")
         return JsonResponse({"error": "Failed to fetch data from Firebase", "details": str(e)}, status=500)
 
     for doc in documents:
@@ -90,10 +92,6 @@ def get_single_district(request, district_name):
                 ],
             })
     return JsonResponse({"error": "District not found"}, status=404)
-
-
-### Authentication APIs ###
-
 
 @csrf_exempt
 @require_POST
@@ -121,7 +119,7 @@ def register(request):
             "fields": {
                 "username": {"stringValue": username},
                 "email": {"stringValue": email},
-                "created_at": {"timestampValue": datetime.datetime.utcnow().isoformat() + "Z"}
+                "created_at": {"timestampValue": datetime.datetime.utcnow().isoformat() + "Z"},
             }
         }
 
@@ -137,15 +135,15 @@ def register(request):
         # Rollback Django user if Firestore save fails
         if 'user' in locals():
             user.delete()
+        logger.error(f"Firestore post error in register: {traceback.format_exc()}")
         return JsonResponse({"error": "Failed to save user data to Firestore", "details": str(e)}, status=500)
 
     except json.JSONDecodeError:
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
     except Exception:
-        # For production, avoid leaking raw error details
+        logger.error(f"General server error in register: {traceback.format_exc()}")
         return JsonResponse({"error": "Server error"}, status=500)
-
 
 @csrf_exempt
 @require_POST
@@ -180,9 +178,8 @@ def user_login(request):
         return JsonResponse({"error": "Invalid JSON"}, status=400)
 
     except Exception:
-        # For production, avoid leaking raw error details
+        logger.error(f"General server error in login: {traceback.format_exc()}")
         return JsonResponse({"error": "Server error"}, status=500)
-
 
 @csrf_exempt
 @require_POST

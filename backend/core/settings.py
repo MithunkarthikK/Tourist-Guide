@@ -7,7 +7,7 @@ load_dotenv()  # Load variables from .env file
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'SECRET_KEY'
+SECRET_KEY = config('SECRET_KEY', default='your-default-secret-key')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
@@ -86,12 +86,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://touristguide.vercel.app" # Production frontend domain
 ]
 
-CORS_ALLOWED_ORIGINS += config(
-    'CORS_ALLOWED_ORIGINS',
-    default="",
-).split(",") if config('CORS_ALLOWED_ORIGINS', default="") else []
+extra_origins = config('CORS_ALLOWED_ORIGINS', default="")
+if extra_origins:
+    CORS_ALLOWED_ORIGINS += [origin.strip() for origin in extra_origins.split(",")]
 
-# Cookie settings for secure cross-site cookies in production
 if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
@@ -103,7 +101,6 @@ else:
     SESSION_COOKIE_SAMESITE = "Lax"
     CSRF_COOKIE_SAMESITE = "Lax"
 
-# DRF settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',  # Token auth
@@ -112,4 +109,17 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+}
+
+# Optional: Logging to help debug errors
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {'class': 'logging.StreamHandler'},
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'ERROR',
+    },
 }
