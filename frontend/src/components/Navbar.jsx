@@ -19,17 +19,13 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
     setOpen(false);
   };
 
-  const isAuthPage =
-    location.pathname === "/login" || location.pathname === "/register";
+  const isAuthPage = location.pathname === "/login" || location.pathname === "/register";
 
   return (
     <nav className="bg-[#121212] text-white px-4 py-3 shadow-md fixed top-0 w-full z-50 border-b border-[#222]">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
         {/* Logo */}
-        <Link
-          to="/"
-          className="flex items-center gap-2 text-xl font-bold tracking-wide glow-text-orange"
-        >
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-wide glow-text-orange">
           <MapPin size={22} className="text-orange-400" />
           <span className="hidden sm:inline">Tourist Guide</span>
         </Link>

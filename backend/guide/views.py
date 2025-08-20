@@ -43,12 +43,8 @@ def get_destinations(request):
     data = []
     for doc in documents:
         fields = doc.get("fields", {})
-        popular_places = [
-            parse_place(p) for p in fields.get("popular_places", {}).get("arrayValue", {}).get("values", [])
-        ]
-        hidden_places = [
-            parse_place(p) for p in fields.get("hidden_places", {}).get("arrayValue", {}).get("values", [])
-        ]
+        popular_places = [parse_place(p) for p in fields.get("popular_places", {}).get("arrayValue", {}).get("values", [])]
+        hidden_places = [parse_place(p) for p in fields.get("hidden_places", {}).get("arrayValue", {}).get("values", [])]
         data.append({
             "id": doc["name"].split("/")[-1],
             "name": fields.get("name", {}).get("stringValue", ""),
@@ -84,12 +80,8 @@ def get_single_district(request, district_name):
                 "region": fields.get("region", {}).get("stringValue", ""),
                 "image": fields.get("image", {}).get("stringValue", ""),
                 "description": fields.get("description", {}).get("stringValue", ""),
-                "popular_places": [
-                    parse_place(p) for p in fields.get("popular_places", {}).get("arrayValue", {}).get("values", [])
-                ],
-                "hidden_places": [
-                    parse_place(p) for p in fields.get("hidden_places", {}).get("arrayValue", {}).get("values", [])
-                ],
+                "popular_places": [parse_place(p) for p in fields.get("popular_places", {}).get("arrayValue", {}).get("values", [])],
+                "hidden_places": [parse_place(p) for p in fields.get("hidden_places", {}).get("arrayValue", {}).get("values", [])],
             })
     return JsonResponse({"error": "District not found"}, status=404)
 
@@ -111,10 +103,8 @@ def register(request):
         if User.objects.filter(email=email).exists():
             return JsonResponse({"error": "Email already registered"}, status=400)
 
-        # Create Django user with hashed password
         user = User.objects.create_user(username=username, email=email, password=password)
 
-        # Prepare Firestore document data
         firestore_body = {
             "fields": {
                 "username": {"stringValue": username},
@@ -125,14 +115,12 @@ def register(request):
 
         firestore_url = f"https://firestore.googleapis.com/v1/projects/{PROJECT_ID}/databases/(default)/documents/users_details?key={FIREBASE_API_KEY}"
 
-        # Send POST request to Firestore
         firestore_response = requests.post(firestore_url, json=firestore_body, timeout=10)
         firestore_response.raise_for_status()
 
         return JsonResponse({"message": "User registered successfully"})
 
     except requests.exceptions.RequestException as e:
-        # Rollback Django user if Firestore save fails
         if 'user' in locals():
             user.delete()
         logger.error(f"Firestore post error in register: {traceback.format_exc()}")
@@ -150,7 +138,7 @@ def register(request):
 def user_login(request):
     try:
         data = json.loads(request.body)
-        identifier = data.get("identifier")  # username or email
+        identifier = data.get("identifier")
         password = data.get("password")
 
         if not identifier or not password:
@@ -169,7 +157,7 @@ def user_login(request):
             user = authenticate(request, username=identifier, password=password)
 
         if user is not None:
-            login(request, user)  # sets session cookie
+            login(request, user)
             return JsonResponse({"message": "Login successful", "username": user.username, "email": user.email})
         else:
             return JsonResponse({"error": "Invalid credentials"}, status=401)

@@ -17,43 +17,29 @@ const Login = ({ onLogin }) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword);
-  };
+  const togglePassword = () => setShowPassword(!showPassword);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (!form.identifier || !form.password) {
       return toast.error("All fields are required!");
     }
-
     setIsSubmitting(true);
-
     try {
       const res = await fetch(`${apiUrl}/login/`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({
           identifier: form.identifier,
           password: form.password,
         }),
       });
-
       const data = await res.json();
-
       if (res.ok) {
         toast.success(data.message || "Logged in successfully!");
         setForm({ identifier: "", password: "" });
-
-        if (typeof onLogin === "function") {
-          onLogin(); // Notify parent about successful login
-        }
-
-        // Redirect back to originally requested page or to home
+        if (typeof onLogin === "function") onLogin();
         const redirectTo = location.state?.from?.pathname || "/";
         navigate(redirectTo, { replace: true });
       } else {
@@ -70,9 +56,7 @@ const Login = ({ onLogin }) => {
     <div className="bg-[#121212] min-h-screen flex items-center justify-center px-4">
       <Toaster position="top-center" />
       <div className="bg-[#1c1c1c] text-white border border-[#2e2e2e] rounded-2xl w-full max-w-md p-8 shadow-md shadow-orange-500/10">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-white">
-          Welcome Back 👋
-        </h2>
+        <h2 className="text-3xl font-semibold mb-6 text-center">Welcome Back 👋</h2>
         <form onSubmit={handleSubmit} className="space-y-5" noValidate>
           <div className="relative">
             <label className="text-sm font-medium text-gray-400 flex items-center gap-1">
@@ -129,10 +113,7 @@ const Login = ({ onLogin }) => {
           </button>
           <div className="text-center text-sm text-gray-400">
             Not registered?{" "}
-            <Link
-              to="/register"
-              className="text-orange-400 hover:underline font-medium"
-            >
+            <Link to="/register" className="text-orange-400 hover:underline font-medium">
               Create an account
             </Link>
           </div>

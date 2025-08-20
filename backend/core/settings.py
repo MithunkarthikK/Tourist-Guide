@@ -23,11 +23,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'guide',
     'rest_framework',
-    'rest_framework.authtoken',  # For token auth
+    'rest_framework.authtoken',  # Token auth support
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',  # must be at the very top
+    'corsheaders.middleware.CorsMiddleware',  # Must be at the top
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -78,18 +78,20 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS settings
+# CORS configuration
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",          # Local dev frontend
+    "http://localhost:5173",           # Local dev frontend
     "https://touristguide.vercel.app" # Production frontend domain
 ]
 
+# Add more origins from environment variable if set
 extra_origins = config('CORS_ALLOWED_ORIGINS', default="")
 if extra_origins:
-    CORS_ALLOWED_ORIGINS += [origin.strip() for origin in extra_origins.split(",")]
+    CORS_ALLOWED_ORIGINS += [origin.strip() for origin in extra_origins.split(",") if origin.strip()]
 
+# Cookie settings — secure in production, relaxed in dev
 if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
@@ -101,22 +103,23 @@ else:
     SESSION_COOKIE_SAMESITE = "Lax"
     CSRF_COOKIE_SAMESITE = "Lax"
 
+# DRF authentication settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',  # Token auth
-        'rest_framework.authentication.SessionAuthentication', # Session auth
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
 
-# Optional: Logging to help debug errors
+# Logging configuration for error debugging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'console': {'class': 'logging.StreamHandler'},
+        'console': { 'class': 'logging.StreamHandler' },
     },
     'root': {
         'handlers': ['console'],

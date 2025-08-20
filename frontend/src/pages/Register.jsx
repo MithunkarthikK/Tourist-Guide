@@ -6,35 +6,28 @@ import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [form, setForm] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+  const [form, setForm] = useState({ username: "", email: "", password: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
-  // Read API base URL from environment variables e.g. VITE_API_URL
   const apiUrl = import.meta.env.VITE_API_URL || "";
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword);
-  };
+  const togglePassword = () => setShowPassword(!showPassword);
 
   const isValidEmail = (email) => /^\S+@\S+\.\S+$/.test(email);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const { username, email, password } = form;
 
     if (!username || !email || !password) {
       return toast.error("All fields are required!");
     }
-
     if (!isValidEmail(email)) {
       return toast.error("Please enter a valid email address.");
     }
@@ -44,12 +37,9 @@ const Register = () => {
     try {
       const res = await fetch(`${apiUrl}/register/`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),
       });
-
       const text = await res.text();
 
       let data = {};
@@ -77,9 +67,7 @@ const Register = () => {
     <div className="bg-[#121212] min-h-screen flex items-center justify-center px-4">
       <Toaster position="top-center" />
       <div className="bg-[#1c1c1c] text-white border border-[#2e2e2e] rounded-2xl w-full max-w-md p-8 shadow-md shadow-orange-500/10">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-white">
-          Create Account ✨
-        </h2>
+        <h2 className="text-3xl font-semibold mb-6 text-center">Create Account ✨</h2>
         <form onSubmit={handleSubmit} className="space-y-5" noValidate>
           <div>
             <label className="text-sm font-medium text-gray-400 flex items-center gap-1">
@@ -97,7 +85,6 @@ const Register = () => {
               autoComplete="username"
             />
           </div>
-
           <div>
             <label className="text-sm font-medium text-gray-400 flex items-center gap-1">
               <Mail className="h-4 w-4" /> Email
@@ -114,7 +101,6 @@ const Register = () => {
               autoComplete="email"
             />
           </div>
-
           <div>
             <label className="text-sm font-medium text-gray-400 flex items-center gap-1">
               <Lock className="h-4 w-4" /> Password
@@ -156,10 +142,7 @@ const Register = () => {
 
           <div className="text-center text-sm text-gray-400">
             Already have an account?{" "}
-            <Link
-              to="/login"
-              className="text-orange-400 hover:underline font-medium"
-            >
+            <Link to="/login" className="text-orange-400 hover:underline font-medium">
               Login
             </Link>
           </div>
