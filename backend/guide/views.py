@@ -15,7 +15,7 @@ from django.core.exceptions import MultipleObjectsReturned
 logger = logging.getLogger(__name__)
 
 # Environment variables
-FIREBASE_API_KEY = os.environ.get("FIREBASE_API_KEY", "YOUR_DEFAULT_API_KEY")
+FIREBASE_API_KEY = os.environ.get("FIREBASE_API_KEY", "AIzaSyAVkBZq2KWGvXdcO9trZvhansc2wRvQQec")
 PROJECT_ID = os.environ.get("PROJECT_ID", "touristguidedb-tn")
 
 # ------------------------
